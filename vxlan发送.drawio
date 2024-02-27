@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net" modified="2024-02-27T11:38:47.773Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="S5-wWzccm470rapFMxdJ" version="23.1.7" type="github">
+  <diagram name="第 1 页" id="X2_MCy6Nui2UPp4Mtz_P">
+    <mxGraphModel dx="906" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t-HiWtK89xboQnCc3zS1-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-1" target="t-HiWtK89xboQnCc3zS1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-1" value="开始" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="40" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-2" target="t-HiWtK89xboQnCc3zS1-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-2" value="VM数据包发送到交换机端口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-3" target="t-HiWtK89xboQnCc3zS1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-3" target="t-HiWtK89xboQnCc3zS1-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-3" value="是否为vxlan端口" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="180" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-4" target="t-HiWtK89xboQnCc3zS1-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-4" value="数据包根据流表转发到vxlan端口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-6" target="t-HiWtK89xboQnCc3zS1-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-6" value="根据目的MAC地址查找目的VNI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-8" target="t-HiWtK89xboQnCc3zS1-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-8" value="查找VTEP IP表，封装报文" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-9" target="t-HiWtK89xboQnCc3zS1-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-9" value="根据外层头从物理端口转发进入外部网络" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-10" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-12" value="丢弃报文" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-13" value="转发到internel端口，通过协议栈处理转发" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-16" target="t-HiWtK89xboQnCc3zS1-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="t-HiWtK89xboQnCc3zS1-16" target="t-HiWtK89xboQnCc3zS1-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-HiWtK89xboQnCc3zS1-16" value="源和目的是否同一VNI" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="440" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
